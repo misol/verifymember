@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="0.2">
+	<title xml:lang="ko">고대생 인증</title>
+	<title xml:lang="en">Verity KU</title>
+	<description xml:lang="ko">포탈(portal.korea.ac.kr) 로그인을 통해서 고대 재학 여부를 확인합니다.</description>
+	<description xml:lang="en">Check if a member is a member of KU or not.</description>
+	<version>1.1</version>
+	<date>2015-05-05</date>
+	<category>member</category>
+	<license>The MIT License (MIT)</license>
+
+	<author email_address="misol.kr@gmail.com" link="https://github.com/misol">
+		<name xml:lang="ko">김민수(misol)</name>
+		<name xml:lang="en">Kim, Min Soo(misol)</name>
+	</author>
+</module>

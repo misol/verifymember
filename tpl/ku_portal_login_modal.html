@@ -1,0 +1,56 @@
+<!--// 로그인 위젯 -->
+<!--@if(version_compare(__XE_VERSION__, '1.8.0', '<'))-->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/xeicon/1.0.4/xeicon.min.css" />
+<!--@else-->
+	<load target="./../../../common/xeicon/xeicon.min.css" />
+<!--@end-->
+<load target="css/widget.login.css" />
+<div class="xe-widget-wrapper xe-login-modal" style="margin:0px 0px 0px 0px;width:100%;float:left">
+	<div style="*zoom:1;padding:0 0px 0px 0px !important;">
+		<section class="portal_login_widget">
+			<div class="ly_dimmed"></div>
+			<div class="portal_signin">
+				<div class="login-header">
+					<h1>
+						{$lang->verifymember_portal_login}
+					</h1>
+				</div>
+				<div class="login-body">
+					<form action="" method="post" id="fo_member_login">
+						<fieldset>
+						<legend class="blind">{$lang->verifymember_portal_login}</legend>
+							<div class="control-group">
+								<input type="hidden" name="act" value="procVerifymemberPortalLogin" />
+								<input type="hidden" name="xe_validator_id" value="module/verifymember/tpl/login_modal" />
+								<input type="hidden" name="target_srl" cond="$logged_info->is_admin=='Y'" value="{$view_member_srl}" />
+								<input type="text" name="user_id" id="uemail" required placeholder="{$lang->user_id}" title="{$lang->user_id}" />
+								<input type="password" name="password" id="upw" required placeholder="{$lang->password}" title="{$lang->password}" />
+							</div>
+							<div cond="$XE_VALIDATOR_MESSAGE && $XE_VALIDATOR_ID == 'module/verifymember/tpl/login_modal'" class="control-group">
+								<p class="error">{$XE_VALIDATOR_MESSAGE}</p>
+							</div>
+							<div class="control-group">
+								<input type="submit" value="{$lang->cmd_login}" class="btn_submit">
+							</div>
+						</fieldset>
+					</form>
+				</div>
+				<div class="login-footer">
+					<a href="http://portal.korea.ac.kr/front/Intro.kpd" onclick="window.open(this.href);return false;">{$lang->verifymember_go_portal}</a>
+				</div>
+				<a href="#" class="btn_close"><i class="xi-close"></i><span class="blind">{$lang->verifymember_close}</span></a>
+			</div>
+			<script>
+			jQuery(function($){
+				$('.btn_close,div.ly_dimmed').click(function(){
+					$('.portal_login_widget').hide();
+					return false;
+				});
+			});
+			jQuery('.portal_login_widget').hide();
+			<!--@if($XE_VALIDATOR_MESSAGE && $XE_VALIDATOR_ID == 'module/verifymember/tpl/login_modal')-->jQuery('.portal_login_widget').show();<!--@end-->
+			</script>
+		</section>
+	</div>
+</div>
+<!--// 로그인 위젯 -->

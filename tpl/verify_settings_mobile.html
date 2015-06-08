@@ -1,0 +1,32 @@
+<load target="./css/m.css" />
+<div class="verify_container">
+	<h2>{$lang->verifymember_membersettings}</h2>
+	<p class="about_verifymember">
+		{$lang->verifymember_about_membersettings}
+	</p>
+	<!--@if($verified)-->
+	<div cond="$XE_VALIDATOR_MESSAGE && $XE_VALIDATOR_ID == 'module/verifymember/tpl/login_modal'" class="message {$XE_VALIDATOR_MESSAGE_TYPE}">
+		<p>{$XE_VALIDATOR_MESSAGE}</p>
+	</div>
+	<!--@end-->
+	<ul>
+	<!--@if($verified)-->
+		<dt>{$lang->verifymember_verifying_status}</dt>
+		<dd>{$lang->verifymember_verified}</dd>
+		<dt>{$lang->verifymember_school_status}</dt>
+		<dd>{$ku_student->student_status}</dd>
+		<dt>{$lang->verifymember_time}</dt>
+		<dd>{date("Y-m-d H:i:s", strtotime($ku_student->regdate))}</dd>
+	<!--@else-->
+		<dt>{$lang->verifymember_verifying_status}</dt>
+		<dd>{$lang->verifymember_not_verified}</dd>
+	<!--@end-->
+	</ul>
+
+	<!--@if(!$verified)-->
+		<div class="ctrl_vm">
+			<a href="#" onclick="jQuery('.portal_login_widget').show();return false;" class="btn">포탈 로그인</a>
+		</div>
+		<include target="ku_portal_login_modal.html" />
+	<!--@end-->
+</div>

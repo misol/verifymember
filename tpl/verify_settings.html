@@ -1,0 +1,26 @@
+<include cond="!Mobile::isFromMobilePhone()" target="../../member/skins/default/common_header.html" />
+<h1>{$lang->verifymember_membersettings}</h1>
+<!--@if($verified)-->
+<div cond="$XE_VALIDATOR_MESSAGE && $XE_VALIDATOR_ID == 'module/verifymember/tpl/login_modal'" class="message {$XE_VALIDATOR_MESSAGE_TYPE}">
+	<p>{$XE_VALIDATOR_MESSAGE}</p>
+</div>
+<!--@end-->
+<ul>
+<!--@if($verified)-->
+	<dt>{$lang->verifymember_verifying_status}</dt>
+	<dd>{$lang->verifymember_verified}</dd>
+	<dt>{$lang->verifymember_school_status}</dt>
+	<dd>{$ku_student->student_status}</dd>
+	<dt>{$lang->verifymember_time}</dt>
+	<dd>{date("Y-m-d H:i:s", strtotime($ku_student->regdate))}</dd>
+<!--@else-->
+	<dt>{$lang->verifymember_verifying_status}</dt>
+	<dd>{$lang->verifymember_not_verified}</dd>
+<!--@end-->
+</ul>
+
+<!--@if(!$verified)-->
+	<a href="#" onclick="jQuery('.portal_login_widget').show();return false;" class="btn">포탈 로그인</a>
+	<include target="ku_portal_login_modal.html" />
+<!--@end-->
+<include cond="!Mobile::isFromMobilePhone()" target="../../member/skins/default/common_footer.html" />

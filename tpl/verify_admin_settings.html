@@ -1,0 +1,33 @@
+<h1>{$lang->verifymember_membersettings}</h1>
+<ul>
+	<dt>{$lang->user_id}</dt>
+	<dd>{$view_member_info->user_id}</dd>
+<!--@if($verified)-->
+	<dt>{$lang->verifymember_verifying_status}</dt>
+	<dd>{$lang->verifymember_verified}</dd>
+	<dt>{$lang->verifymember_name}</dt>
+	<dd>{$ku_student->student_name}</dd>
+	<dt>{$lang->verifymember_department}</dt>
+	<dd>{$ku_student->student_department}</dd>
+	<dt>{$lang->verifymember_school_status}</dt>
+	<dd>{$ku_student->student_status}</dd>
+	<dt>{$lang->verifymember_time}</dt>
+	<dd>{date("Y-m-d H:i:s", strtotime($ku_student->regdate))}</dd>
+<!--@else-->
+	<dt>{$lang->verifymember_verifying_status}</dt>
+	<dd>{$lang->verifymember_not_verified}</dd>
+<!--@end-->
+</ul>
+
+<!--@if(!$verified)-->
+	<a href="#" onclick="jQuery('.portal_login_widget').show();return false;" class="btn">포탈 로그인</a>
+	<include target="ku_portal_login_modal.html" />
+<!--@end-->
+
+<!--@if($verified)-->
+<form id="fo_obj" class="x_form-horizontal" action="./" method="post" enctype="multipart/form-data">
+	<input type="hidden" name="act" value="procVerifymemberAdminDeleteInfo" />
+	<input type="hidden" name="target_srl" value="{$view_member_srl}" />
+	<input type="submit" name="submit" value="인증 해제" />
+</form>
+<!--@end-->

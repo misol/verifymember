@@ -1,0 +1,17 @@
+<query id="getRecordByStudentId" action="select">
+	<tables>
+		<table name="verifymember" />
+	</tables>
+	<columns>
+		<column name="member_srl" />
+		<column name="student_status" />
+		<column name="student_name" />
+		<column name="student_id" />
+		<column name="student_department" />
+		<column name="status" />
+		<column name="regdate" />
+	</columns>
+	<conditions>
+		<condition operation="equal" column="student_id" var="student_id" notnull="notnull" filter="number" />
+	</conditions>
+</query>

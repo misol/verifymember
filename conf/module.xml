@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<grants />
+	<permissions>
+		<permission action="procVerifymemberAdminInsertConfig" target="manager" />
+		<permission action="procVerifymemberAdminInsertGroupConfig" target="manager" />
+		<permission action="procVerifymemberAdminDeleteInfo" target="manager" />
+	</permissions>
+	<actions>
+		<action name="dispVerifymemberAdminConfig" type="view" admin_index="true" menu_name="verifymember" menu_index="true" />
+		<action name="dispVerifymemberAdminDetail" type="view" />
+		<action name="procVerifymemberAdminInsertConfig" type="controller" />
+		<action name="procVerifymemberAdminInsertGroupConfig" type="controller" />
+		<action name="procVerifymemberAdminDeleteInfo" type="controller" />
+		<action name="dispVerifymemberSettings" type="view" standalone="true" />
+		<action name="procVerifymemberPortalLogin" type="controller" standalone="true" />
+	</actions>
+	<menus>
+		<menu name="verifymember">
+			<title xml:lang="ko">고대생 인증</title>
+			<title xml:lang="en">RU KU Student</title>
+		</menu>
+	</menus>
+</module>

@@ -1,0 +1,14 @@
+<query id="insertRecord" action="insert">
+	<tables>
+		<table name="verifymember" />
+	</tables>
+	<columns>
+		<column name="member_srl" var="member_srl" />
+		<column name="student_status" var="student_status" />
+		<column name="student_name" var="student_name" />
+		<column name="student_id" var="student_id" />
+		<column name="student_department" var="student_department" />
+		<column name="status" var="status" />
+		<column name="regdate" var="regdate" default="curdate()" />
+	</columns>
+</query>

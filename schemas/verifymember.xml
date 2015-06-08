@@ -1,0 +1,9 @@
+<table name="verifymember">
+	<column name="member_srl" type="number" size="15" notnull="notnull" index="idx_member_srl" primary_key="primary_key" brief="회원 번호" />
+	<column name="student_status" type="varchar" notnull="notnull" size="250" brief="재학 상태" />
+	<column name="student_name" type="varchar" notnull="notnull" size="250" brief="이름" />
+	<column name="student_id" type="varchar" notnull="notnull" size="250" index="idx_student_id" brief="학번 해싱" />
+	<column name="student_department" type="varchar" notnull="notnull" size="250" brief="학과" />
+	<column name="status" type="varchar" notnull="notnull" size="250" brief="회원 상태" />
+	<column name="regdate" type="date" index="idx_regdate" />
+</table>

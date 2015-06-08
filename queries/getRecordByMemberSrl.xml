@@ -1,0 +1,17 @@
+<query id="getRecordByMemberSrl" action="select">
+	<tables>
+		<table name="verifymember" />
+	</tables>
+	<columns>
+		<column name="member_srl" />
+		<column name="student_status" />
+		<column name="student_name" />
+		<column name="student_id" />
+		<column name="student_department" />
+		<column name="status" />
+		<column name="regdate" />
+	</columns>
+	<conditions>
+		<condition operation="equal" column="member_srl" var="member_srl" notnull="notnull" filter="number" />
+	</conditions>
+</query>

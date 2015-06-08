@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<lang>
+	<item name="verifymember_module">
+		<value xml:lang="ko"><![CDATA[고대생 인증 모듈]]></value>
+		<value xml:lang="en"><![CDATA[Verifying Real KU Students module]]></value>
+	</item>
+	<item name="verifymember_manage_member">
+		<value xml:lang="ko"><![CDATA[이 회원의 고대생 인증 관리하기]]></value>
+		<value xml:lang="en"><![CDATA[Manage KU verification of this member]]></value>
+	</item>
+	<item name="verifymember_setting">
+		<value xml:lang="ko"><![CDATA[기본 설정]]></value>
+		<value xml:lang="en"><![CDATA[Base Settings]]></value>
+	</item>
+	<item name="verifymember_membersettings">
+		<value xml:lang="ko"><![CDATA[레알 고대생 인증]]></value>
+		<value xml:lang="en"><![CDATA[Real KU Student Verification]]></value>
+	</item>
+	<item name="verifymember_about_membersettings">
+		<value xml:lang="ko"><![CDATA[레알 고대생 인증은 실제 고대 소속인지 확인인지 포탈 계정 로그인을 통해 확인합니다.]]></value>
+		<value xml:lang="en"><![CDATA[Real KU Student Verification will check whether you are KU student, according to your portal account login.]]></value>
+	</item>
+	<item name="verifymember_cmd_verify">
+		<value xml:lang="ko"><![CDATA[인증하기]]></value>
+		<value xml:lang="en"><![CDATA[Verify]]></value>
+	</item>
+	<item name="verifymember_verified">
+		<value xml:lang="ko"><![CDATA[인증되었습니다.]]></value>
+		<value xml:lang="en"><![CDATA[Verified.]]></value>
+	</item>
+	<item name="verifymember_not_verified">
+		<value xml:lang="ko"><![CDATA[인증되지 않았습니다.]]></value>
+		<value xml:lang="en"><![CDATA[Not verified.]]></value>
+	</item>
+	<item name="verifymember_invalid_multi">
+		<value xml:lang="ko"><![CDATA[이미 다른 계정의 인증에 사용된 학번입니다.]]></value>
+		<value xml:lang="en"><![CDATA[Already registerd student ID number.]]></value>
+	</item>
+	<item name="verifymember_failed">
+		<value xml:lang="ko"><![CDATA[알 수 없는 이유로 인증에 실패했습니다.]]></value>
+		<value xml:lang="en"><![CDATA[Verifying failed.]]></value>
+	</item>
+	<item name="verifymember_go_portal">
+		<value xml:lang="ko"><![CDATA[포탈로 이동]]></value>
+		<value xml:lang="en"><![CDATA[Go to Portal]]></value>
+	</item>
+	<item name="verifymember_portal_login">
+		<value xml:lang="ko"><![CDATA[고대 포탈 로그인]]></value>
+		<value xml:lang="en"><![CDATA[KU Portal Login]]></value>
+	</item>
+	<item name="verifymember_close">
+		<value xml:lang="ko"><![CDATA[닫기]]></value>
+		<value xml:lang="en"><![CDATA[Close]]></value>
+	</item>
+	<item name="verifymember_show">
+		<value xml:lang="ko"><![CDATA[표시]]></value>
+		<value xml:lang="en"><![CDATA[Show]]></value>
+	</item>
+	<item name="verifymember_hide">
+		<value xml:lang="ko"><![CDATA[감춤]]></value>
+		<value xml:lang="en"><![CDATA[Hide]]></value>
+	</item>
+	<item name="verifymember_member_list">
+		<value xml:lang="ko"><![CDATA[회원 메뉴에 표시]]></value>
+		<value xml:lang="en"><![CDATA[Display on Member menu]]></value>
+	</item>
+	<item name="about_verifymember_member_list">
+		<value xml:lang="ko"><![CDATA[회원 정보 메뉴 중 하나로 표시합니다.]]></value>
+		<value xml:lang="en"><![CDATA[Display as one of member menu]]></value>
+	</item>
+	<item name="verifymember_link_group">
+		<value xml:lang="ko"><![CDATA[인증과 회원 그룹 연동]]></value>
+		<value xml:lang="en"><![CDATA[Change Member Group by Verification]]></value>
+	</item>
+	<item name="about_verifymember_link_group">
+		<value xml:lang="ko"><![CDATA[원하는 그룹을 지정하면, 고대생 인증 성공시 그룹이 변경됩니다.]]></value>
+		<value xml:lang="en"><![CDATA[If you specify level for a specific group, users are assigned into the group when they are verified as a KU member.]]></value>
+	</item>
+	<item name="verifymember_group_reset_and_add">
+		<value xml:lang="ko"><![CDATA[설정된 그룹 초기화 후 새 그룹 부여]]></value>
+		<value xml:lang="en"><![CDATA[Reset adjusted groups and add new groups]]></value>
+	</item>
+	<item name="verifymember_group_add_only">
+		<value xml:lang="ko"><![CDATA[새 그룹만 부여]]></value>
+		<value xml:lang="en"><![CDATA[Only to new groups]]></value>
+	</item>
+	<item name="verifymember_verifying_status">
+		<value xml:lang="ko"><![CDATA[인증 상태]]></value>
+		<value xml:lang="en"><![CDATA[Verifying status]]></value>
+	</item>
+	<item name="verifymember_name">
+		<value xml:lang="ko"><![CDATA[이름]]></value>
+		<value xml:lang="en"><![CDATA[Name]]></value>
+	</item>
+	<item name="verifymember_time">
+		<value xml:lang="ko"><![CDATA[인증 시간]]></value>
+		<value xml:lang="en"><![CDATA[Verified date]]></value>
+	</item>
+	<item name="verifymember_school_status">
+		<value xml:lang="ko"><![CDATA[재학 상태]]></value>
+		<value xml:lang="en"><![CDATA[Student status]]></value>
+	</item>
+	<item name="verifymember_department">
+		<value xml:lang="ko"><![CDATA[학과]]></value>
+		<value xml:lang="en"><![CDATA[Department]]></value>
+	</item>
+</lang>
